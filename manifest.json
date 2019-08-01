@@ -1,0 +1,18 @@
+{
+    "name": "直リン君",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Qiitaの通知領域にて, ユーザ名部分をそのユーザへのリンクにする拡張機能",
+    "icons": {
+        "16":  "icons/16.png",
+        "48":  "icons/48.png",
+        "128": "icons/128.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://qiita.com/*"],
+        "js": [
+            "content.js"
+        ],
+        "all_frames": true
+    }]
+}
